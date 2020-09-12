@@ -58,3 +58,57 @@ section {
   margin: auto;
   font-size: 2rem;
 }
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  background-color: var(--foreground-color);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.content-img {
+  flex: 1;
+}
+
+.content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: var(--blend-mode);
+}
+
+.content-text {
+  flex: 1;
+  padding: 5rem;
+}
+
+.title {
+  font-size: 5rem;
+  color: var(--title-color);
+}
+
+.sub-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0.5rem 0 3rem 0;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid var(--body-color);
+  color: var(--body-color);
+  padding: 1rem 2.5rem;
+  margin-top: 2.5rem;
+}
