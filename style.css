@@ -12,18 +12,49 @@ html {
 }
 
 :root {
-    --title-color: #333333
-    --body-color: #696969
-    --background-color: #eeeeee
-    --foreground-color: #ffffff
-    --blend-mode: normal
+  --title-color: #333333;
+  --body-color: #696969;
+  --background-color: #eeeeee;
+  --foreground-color: #ffffff;
+  --blend-mode: normal;
 }
 
-.dark-theme{
-    --title-color: #ffffff
-    --body-color: #afafaf
-    --background-color: #181621
-    --foreground-color: #211f2a
-    --blend-mode: lighten
+.dark-theme {
+  --title-color: #ffffff;
+  --body-color: #afafaf;
+  --background-color: #181621;
+  --foreground-color: #211f2a;
+  --blend-mode: lighten;
 }
 
+body {
+  background-color: var(--background-color);
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  color: var(--body-color);
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 0;
+}
+
+.toggle-btn {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  border: 0.2rem solid var(--body-color);
+  display: flex;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.toggle-btn i {
+  margin: auto;
+  font-size: 2rem;
+}
