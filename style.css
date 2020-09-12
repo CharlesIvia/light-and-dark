@@ -10,3 +10,20 @@ html {
   font-size: 10px;
   font-family: "Noto Sans JP", sans-serif;
 }
+
+:root {
+    --title-color: #333333
+    --body-color: #696969
+    --background-color: #eeeeee
+    --foreground-color: #ffffff
+    --blend-mode: normal
+}
+
+.dark-theme{
+    --title-color: #ffffff
+    --body-color: #afafaf
+    --background-color: #181621
+    --foreground-color: #211f2a
+    --blend-mode: lighten
+}
+
